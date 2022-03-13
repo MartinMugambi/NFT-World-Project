@@ -1,7 +1,7 @@
-import Banner from "../components/banner";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import Posts from "../components/posts";
+import Banner from "../components/banner/banner";
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
+import Posts from "../components/posts/posts";
 
 interface NameProps{
   name: string,

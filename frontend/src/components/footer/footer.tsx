@@ -6,13 +6,13 @@ const Footer = () =>{
      return(
          <footer className="w-screen bg-slate-100 grid grid-cols-4 space-y-4 p-5">
            <div className="flex flex-col space-y-4">
-             <h3 className="font-poppins text-base tracking-wider">ArtWorld</h3>
-             <p className="font-poppins text-base max-w-xs">ArtWorld is the worlds leading commuinty for craetive NFT marketplace</p>
+             <h3 className="font-poppins text-base tracking-wider" data-testid= "heading">ArtWorld</h3>
+             <p className="font-poppins text-base max-w-xs" data-testid="paragraph">ArtWorld is the worlds leading commuinty for craetive NFT marketplace</p>
               <div className="flex space-x-4">
-                <FacebookIcon />
-                <TwitterIcon />
-                <InstagramIcon />
-                <PinterestIcon />
+                <FacebookIcon data-testid="social-icon" />
+                <TwitterIcon data-testid="social-icon" />
+                <InstagramIcon data-testid="social-icon"/>
+                <PinterestIcon data-testid="social-icon"/>
               </div>
            </div>
            <div>

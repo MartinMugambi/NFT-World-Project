@@ -1,6 +1,6 @@
 import React, { useState, useReducer,useEffect } from "react";
 import axios from "axios";
-import { API } from "../types";
+import { API } from "../../types";
 import { TailSpin } from "react-loader-spinner";
 import {useNavigate} from "react-router-dom"
 
@@ -114,10 +114,10 @@ const CreatePost = () =>{
          <h1 className="font-bold text-2xl tracking-wider">Express your <span className="text-blue-600">Art</span></h1>
           <h3 className="font-bold text-base">Title</h3>
            <input type= "text" className="border-2 border-black p-1 outline-none  rounded" placeholder="Title" value={state.title} onChange ={handleTitleChange}/>
-           <h3 className="font-bold text-base">Decription</h3>
+           <h3 className="font-bold text-base">Description</h3>
             <textarea className="outline-none border-2 border-black p-1 resize-none  h-1/5 rounded" placeholder="description" value={state.description} onChange= {handleDescriptionChange} ></textarea>
            <h3 className="font-bold text-base">Select image file to upload</h3>
-           <input type="file" className="p-1 h-10"  onChange = {handleFileChange} />
+           <input type="file" className="p-1 h-10"  onChange = {handleFileChange}  data-testid="file"/>
            {loading ? <TailSpin width={30} height={30} ariaLabel= "loading" />: <button className="bg-blue-600 text-white w-24 h-11 rounded" onClick={submitPost}>Submit</button>}
         </form>
         </section>

@@ -1,9 +1,9 @@
 import {useNavigate} from 'react-router-dom'
 import SearchIcon from "@material-ui/icons/Search"
 import AccountCircleIcon from "@material-ui/icons/AccountCircle"
-import  {useAppSelector} from "../redux/index" 
+import  {useAppSelector} from "../../redux/index" 
 import axios from 'axios'
-import {API} from "../types"
+import {API} from "../../types"
 
 interface NameProp{
   name: string
@@ -54,16 +54,16 @@ const Header = (props: NameProp) =>{
     if(props.name === "") {
         return (
             <header className="flex space-x-5 w-screen shadow h-20 justify-between font-poppins text-base p-3 text-gray-900 items-center bg-white cursor-pointer font-medium">
-        <div className="flex space-x-8 ml-4">
+        <div className="flex space-x-8 ml-4 sm:text-base">
            <h3 className="tracking-wide">ArtWorld</h3>
-            <p>Inspirations</p>
-            <p>Post Work</p>
-            <p>Market Place</p>
-            <p>Hire Artist</p>
+            <p className="sm:hidden">Inspirations</p>
+            <p className="sm:hidden">Post Work</p>
+            <p className="sm:hidden">Market Place</p>
+            <p className="sm:hidden">Hire Artist</p>
         </div>
-        <div className="flex space-x-5">
-             <button onClick={navigateLogin} className="bg-blue-600 ring-4 ring-blue-300 text-white w-20 h-10 rounded hover:opacity-70">Sign In</button>
-             <button onClick={navigateToSignUp} className="bg-blue-600 text-white w-20 h-10 rounded hover:opacity-70">Sign up</button>
+        <div className="flex space-x-5 sm:space-x-0">
+             <button onClick={navigateLogin} className="bg-blue-600 ring-4 ring-blue-300 text-white w-20 h-10 rounded hover:opacity-70 sm:w-14 sm:text-sm sm:ring-0 sm:mr-4">Sign In</button>
+             <button onClick={navigateToSignUp} className="bg-blue-600 text-white w-20 h-10 rounded hover:opacity-70 sm:w-14 sm:text-xs sm:ring-0 sm:hidden">Sign up</button>
              <button></button>
         </div>
         </header> 

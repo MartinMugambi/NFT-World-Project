@@ -7,9 +7,9 @@ import Post from './pages/Post';
 import { useState, useContext } from 'react';
 import { useEffect } from 'react';
 import { API } from './types';
-import Header from './components/header';
+import Header from './components/header/header';
 
-import Posts from "./components/posts"
+import Posts from "./components/posts/posts"
 import React from 'react';
 import axios from 'axios';
 import UserHome from './pages/userHome';

@@ -1,5 +1,5 @@
- import CreatePost from "../components/createPost"
-import Header from "../components/header";
+ import CreatePost from "../components/createpost/createPost"
+import Header from "../components/header/header";
 import {useAppSelector} from "../redux/index"
 interface Props{
     name: string,

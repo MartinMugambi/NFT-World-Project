@@ -1,5 +1,5 @@
-import Header from "../components/header"
-import UserPost from "../components/userPost"
+import Header from "../components/header/header"
+import UserPost from "../components/userpost/userPost"
 
 interface NameProps{
   name: string,

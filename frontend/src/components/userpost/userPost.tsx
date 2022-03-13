@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API } from "../types";
+import { API } from "../../types";
 import {TailSpin} from "react-loader-spinner"
 import { log } from "console";
 
